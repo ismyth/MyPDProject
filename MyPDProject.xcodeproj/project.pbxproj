@@ -15,6 +15,18 @@
 		4917A7FE20873628005A0A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4917A7FC20873628005A0A53 /* LaunchScreen.storyboard */; };
 		4917A80920873628005A0A53 /* MyPDProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4917A80820873628005A0A53 /* MyPDProjectTests.m */; };
 		4917A81420873628005A0A53 /* MyPDProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4917A81320873628005A0A53 /* MyPDProjectUITests.m */; };
+		4917A82C208736E9005A0A53 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917A8272087368B005A0A53 /* libpd-ios.a */; };
+		4917A830208736FC005A0A53 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917A82E208736FC005A0A53 /* AudioToolbox.framework */; };
+		4917A831208736FC005A0A53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917A82F208736FC005A0A53 /* AVFoundation.framework */; };
+		4917A83620874926005A0A53 /* PDPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4917A83520874926005A0A53 /* PDPatch.m */; };
+		4917A83E208A1E95005A0A53 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A83D208A1E95005A0A53 /* main.pd */; };
+		4917A844208E57E6005A0A53 /* main3.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A843208E57E6005A0A53 /* main3.pd */; };
+		4917A852208E91AC005A0A53 /* main4.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A851208E91AC005A0A53 /* main4.pd */; };
+		4917A868208F1B37005A0A53 /* main5.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A867208F1B37005A0A53 /* main5.pd */; };
+		4917A87A20A259EA005A0A53 /* FMUnit.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A87920A259EA005A0A53 /* FMUnit.pd */; };
+		4917A87C20A259F5005A0A53 /* tri.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A87B20A259F5005A0A53 /* tri.pd */; };
+		4917A88E20A3B05A005A0A53 /* pwm.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A88D20A3B05A005A0A53 /* pwm.pd */; };
+		4917A89020A3B068005A0A53 /* seqtest5.pd in Resources */ = {isa = PBXBuildFile; fileRef = 4917A88F20A3B068005A0A53 /* seqtest5.pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +43,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4917A7EA20873627005A0A53;
 			remoteInfo = MyPDProject;
+		};
+		4917A8262087368B005A0A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4917A8212087368B005A0A53 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		4917A8282087368B005A0A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4917A8212087368B005A0A53 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		4917A82A208736C4005A0A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4917A8212087368B005A0A53 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +84,19 @@
 		4917A80F20873628005A0A53 /* MyPDProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPDProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4917A81320873628005A0A53 /* MyPDProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPDProjectUITests.m; sourceTree = "<group>"; };
 		4917A81520873628005A0A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4917A8212087368B005A0A53 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		4917A82E208736FC005A0A53 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4917A82F208736FC005A0A53 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4917A83420874926005A0A53 /* PDPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPatch.h; sourceTree = "<group>"; };
+		4917A83520874926005A0A53 /* PDPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPatch.m; sourceTree = "<group>"; };
+		4917A83D208A1E95005A0A53 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.pd; sourceTree = "<group>"; };
+		4917A843208E57E6005A0A53 /* main3.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main3.pd; sourceTree = "<group>"; };
+		4917A851208E91AC005A0A53 /* main4.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main4.pd; sourceTree = "<group>"; };
+		4917A867208F1B37005A0A53 /* main5.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main5.pd; sourceTree = "<group>"; };
+		4917A87920A259EA005A0A53 /* FMUnit.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FMUnit.pd; sourceTree = "<group>"; };
+		4917A87B20A259F5005A0A53 /* tri.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tri.pd; sourceTree = "<group>"; };
+		4917A88D20A3B05A005A0A53 /* pwm.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pwm.pd; sourceTree = "<group>"; };
+		4917A88F20A3B068005A0A53 /* seqtest5.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seqtest5.pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4917A82C208736E9005A0A53 /* libpd-ios.a in Frameworks */,
+				4917A830208736FC005A0A53 /* AudioToolbox.framework in Frameworks */,
+				4917A831208736FC005A0A53 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +130,12 @@
 		4917A7E220873627005A0A53 = {
 			isa = PBXGroup;
 			children = (
+				4917A8212087368B005A0A53 /* libpd.xcodeproj */,
 				4917A7ED20873628005A0A53 /* MyPDProject */,
 				4917A80720873628005A0A53 /* MyPDProjectTests */,
 				4917A81220873628005A0A53 /* MyPDProjectUITests */,
 				4917A7EC20873628005A0A53 /* Products */,
+				4917A82D208736FC005A0A53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +154,22 @@
 			children = (
 				4917A7F120873628005A0A53 /* AppDelegate.h */,
 				4917A7F220873628005A0A53 /* AppDelegate.m */,
+				4917A83420874926005A0A53 /* PDPatch.h */,
+				4917A83520874926005A0A53 /* PDPatch.m */,
 				4917A7F420873628005A0A53 /* ViewController.h */,
 				4917A7F520873628005A0A53 /* ViewController.m */,
 				4917A7F720873628005A0A53 /* Main.storyboard */,
 				4917A7FA20873628005A0A53 /* Assets.xcassets */,
 				4917A7FC20873628005A0A53 /* LaunchScreen.storyboard */,
 				4917A7FF20873628005A0A53 /* Info.plist */,
+				4917A83D208A1E95005A0A53 /* main.pd */,
+				4917A843208E57E6005A0A53 /* main3.pd */,
+				4917A851208E91AC005A0A53 /* main4.pd */,
+				4917A867208F1B37005A0A53 /* main5.pd */,
+				4917A87920A259EA005A0A53 /* FMUnit.pd */,
+				4917A87B20A259F5005A0A53 /* tri.pd */,
+				4917A88D20A3B05A005A0A53 /* pwm.pd */,
+				4917A88F20A3B068005A0A53 /* seqtest5.pd */,
 				4917A7EE20873628005A0A53 /* Supporting Files */,
 			);
 			path = MyPDProject;
@@ -140,6 +201,24 @@
 			path = MyPDProjectUITests;
 			sourceTree = "<group>";
 		};
+		4917A8222087368B005A0A53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4917A8272087368B005A0A53 /* libpd-ios.a */,
+				4917A8292087368B005A0A53 /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4917A82D208736FC005A0A53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4917A82E208736FC005A0A53 /* AudioToolbox.framework */,
+				4917A82F208736FC005A0A53 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +233,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4917A82B208736C4005A0A53 /* PBXTargetDependency */,
 			);
 			name = MyPDProject;
 			productName = MyPDProject;
@@ -207,6 +287,7 @@
 				TargetAttributes = {
 					4917A7EA20873627005A0A53 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T3N22PM537;
 						ProvisioningStyle = Automatic;
 					};
 					4917A80320873628005A0A53 = {
@@ -232,6 +313,12 @@
 			mainGroup = 4917A7E220873627005A0A53;
 			productRefGroup = 4917A7EC20873628005A0A53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4917A8222087368B005A0A53 /* Products */;
+					ProjectRef = 4917A8212087368B005A0A53 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4917A7EA20873627005A0A53 /* MyPDProject */,
@@ -241,14 +328,39 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4917A8272087368B005A0A53 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 4917A8262087368B005A0A53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4917A8292087368B005A0A53 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 4917A8282087368B005A0A53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4917A7E920873627005A0A53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4917A88E20A3B05A005A0A53 /* pwm.pd in Resources */,
+				4917A844208E57E6005A0A53 /* main3.pd in Resources */,
+				4917A852208E91AC005A0A53 /* main4.pd in Resources */,
 				4917A7FE20873628005A0A53 /* LaunchScreen.storyboard in Resources */,
 				4917A7FB20873628005A0A53 /* Assets.xcassets in Resources */,
+				4917A87C20A259F5005A0A53 /* tri.pd in Resources */,
+				4917A868208F1B37005A0A53 /* main5.pd in Resources */,
+				4917A89020A3B068005A0A53 /* seqtest5.pd in Resources */,
+				4917A83E208A1E95005A0A53 /* main.pd in Resources */,
 				4917A7F920873628005A0A53 /* Main.storyboard in Resources */,
+				4917A87A20A259EA005A0A53 /* FMUnit.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4917A83620874926005A0A53 /* PDPatch.m in Sources */,
 				4917A7F620873628005A0A53 /* ViewController.m in Sources */,
 				4917A7F320873628005A0A53 /* AppDelegate.m in Sources */,
 				4917A7F020873628005A0A53 /* main.m in Sources */,
@@ -307,6 +420,11 @@
 			isa = PBXTargetDependency;
 			target = 4917A7EA20873627005A0A53 /* MyPDProject */;
 			targetProxy = 4917A81020873628005A0A53 /* PBXContainerItemProxy */;
+		};
+		4917A82B208736C4005A0A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 4917A82A208736C4005A0A53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,7 +482,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -374,6 +493,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+				WARNING_CFLAGS = "-w";
 			};
 			name = Debug;
 		};
@@ -405,7 +526,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -414,7 +536,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "-w";
 			};
 			name = Release;
 		};
@@ -422,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3N22PM537;
 				INFOPLIST_FILE = MyPDProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismyth.MyPDProject;
@@ -433,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3N22PM537;
 				INFOPLIST_FILE = MyPDProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismyth.MyPDProject;

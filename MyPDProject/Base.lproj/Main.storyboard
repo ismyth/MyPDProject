@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DSz-0N-doK">
+                                <rect key="frame" x="163" y="570" width="51" height="31"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="onTintColor" red="0.99860441680000001" green="0.924962163" blue="0.52248573300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="XoT-QL-siW"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="550" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-nc-Ylt">
+                                <rect key="frame" x="72" y="237" width="231" height="31"/>
+                                <color key="backgroundColor" red="0.998604416847229" green="0.92496216297149658" blue="0.52248573303222656" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bnb-h5-lcx"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="550" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-Ll-OZr">
+                                <rect key="frame" x="72" y="301" width="231" height="31"/>
+                                <color key="backgroundColor" red="0.99860441680000001" green="0.924962163" blue="0.52248573300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onSliderChange2:" destination="BYZ-38-t0r" eventType="valueChanged" id="H0k-cv-Yic"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="1" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="tOO-UW-6fl">
+                                <rect key="frame" x="72" y="364" width="231" height="31"/>
+                                <color key="backgroundColor" red="0.99860441680000001" green="0.924962163" blue="0.52248573300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onSliderChange3:" destination="BYZ-38-t0r" eventType="valueChanged" id="VzI-Xd-Gmq"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470590000003" green="0.51764705879999995" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kqN-Ll-OZr" firstAttribute="leading" secondItem="tOO-UW-6fl" secondAttribute="leading" id="4KG-46-86z"/>
+                            <constraint firstItem="LvM-nc-Ylt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="Eay-6L-3Fc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DSz-0N-doK" secondAttribute="bottom" constant="66" id="IMe-Xk-IDA"/>
+                            <constraint firstItem="LvM-nc-Ylt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="58" id="Ich-C0-xUw"/>
+                            <constraint firstItem="LvM-nc-Ylt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LOa-wM-lXb"/>
+                            <constraint firstItem="LvM-nc-Ylt" firstAttribute="trailing" secondItem="kqN-Ll-OZr" secondAttribute="trailing" id="Slh-TH-9cR"/>
+                            <constraint firstItem="LvM-nc-Ylt" firstAttribute="leading" secondItem="kqN-Ll-OZr" secondAttribute="leading" id="UdA-ib-QnP"/>
+                            <constraint firstItem="tOO-UW-6fl" firstAttribute="top" secondItem="kqN-Ll-OZr" secondAttribute="bottom" constant="33" id="W5Z-mY-5sC"/>
+                            <constraint firstItem="kqN-Ll-OZr" firstAttribute="trailing" secondItem="tOO-UW-6fl" secondAttribute="trailing" id="lxX-Gp-dK7"/>
+                            <constraint firstItem="DSz-0N-doK" firstAttribute="centerX" secondItem="tOO-UW-6fl" secondAttribute="centerX" id="oDK-v7-par"/>
+                            <constraint firstItem="kqN-Ll-OZr" firstAttribute="top" secondItem="LvM-nc-Ylt" secondAttribute="bottom" constant="34" id="yZk-ls-lt5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FSlider" destination="LvM-nc-Ylt" id="ZED-IH-dDF"/>
+                        <outlet property="FSlider2" destination="kqN-Ll-OZr" id="Rl9-KN-A8n"/>
+                        <outlet property="MSlider" destination="tOO-UW-6fl" id="v0w-2H-zgF"/>
+                        <outlet property="onOff" destination="DSz-0N-doK" id="KBv-4l-aO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MR5-l3-Kwu"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
     </scenes>
 </document>
